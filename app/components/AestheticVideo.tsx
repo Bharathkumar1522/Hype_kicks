@@ -31,13 +31,14 @@ export default function AestheticVideo() {
 
     return (
         <section ref={ref} className="relative w-full h-[50vh] sm:h-[75vh] min-h-[400px] sm:min-h-[600px] flex items-center justify-center overflow-hidden bg-[#0A0A0A]">
-            {/* Background Video — preload="none" stops eager MP4 buffering */}
+            {/* Background Video — preload="metadata" gets the headers quickly but defers chunks */}
             <video
                 ref={videoRef}
                 muted
                 loop
                 playsInline
-                preload="none"
+                preload="metadata"
+                poster="/lifestyle-thumb.jpg"
                 className="absolute inset-0 w-full h-full object-cover z-0 opacity-100"
             >
                 <source src="/Teens_Skate_and_Play_Video.mp4" type="video/mp4" />
