@@ -105,7 +105,7 @@ export default function Home() {
   return (
     <div className="relative z-10 min-h-screen flex flex-col items-center justify-start p-1.5 sm:p-2 md:p-3 bg-gradient-to-br from-[#404144] to-[#212224] scroll-smooth">
       <div
-        className="relative w-full max-w-[1600px] overflow-hidden rounded-[24px] border border-[#ffffff10] border-b-[#ffffff40]"
+        className="relative w-full overflow-hidden rounded-[24px] border border-[#ffffff10] border-b-[#ffffff40]"
         style={{
           background: "linear-gradient(to bottom, rgba(10,10,10,0.8) 0%, rgba(10,10,10,0) 25%, rgba(10,10,10,0) 60%, #0A0A0A 100%), radial-gradient(ellipse at 70% 30%, #E9FF26 0%, transparent 50%), radial-gradient(ellipse at 30% 60%, #A855F7 0%, transparent 60%), radial-gradient(circle at 10% 10%, #FF0066 0%, transparent 40%), radial-gradient(circle at 90% 80%, #FF6600 0%, transparent 40%), #1a1a1a",
           boxShadow: "0 30px 60px rgba(0,0,0,0.5), 0 10px 20px rgba(0,0,0,0.3), 0 15px 35px rgba(255,255,255,0.06)",
@@ -260,7 +260,7 @@ export default function Home() {
       </div>
 
       {/* Modular Content Sections */}
-      <div className="relative w-full max-w-[1600px] mt-6 md:mt-8 flex flex-col gap-6 md:gap-8">
+      <div className="relative w-full mt-6 md:mt-8 flex flex-col gap-6 md:gap-8">
         <div id="drops" className="overflow-hidden rounded-[24px] shadow-2xl border border-[#ffffff10]">
           <ProductSection />
         </div>
@@ -278,7 +278,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="updates" className="relative w-full max-w-[1600px] mt-12 md:mt-24 mb-6 md:mb-8 overflow-hidden rounded-[24px] shadow-2xl border border-[#ffffff10]">
+      <div id="updates" className="relative w-full mt-12 md:mt-24 mb-6 md:mb-8 overflow-hidden rounded-[24px] shadow-2xl border border-[#ffffff10]">
         <Footer />
       </div>
 
